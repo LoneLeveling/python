@@ -51,3 +51,14 @@ elif any(char.isdigit() for char in userName): #NOTE: we used any() here which c
     print("username cannot contain digits")
 else:
     print(f' "{userName}" is valid')
+
+# CODE Solution 2:
+username=input("Enter your username:")
+if len(username)>12:
+    print("username is too long")
+elif username.find(" ")==-1:
+    print("username cannot contain spaces")
+elif not username.isalpha():
+    print("username cannot contain digits")
+else:
+    print(f' "{username}" is valid')
